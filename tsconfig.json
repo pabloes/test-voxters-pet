@@ -3,10 +3,17 @@
     "outFile": "./bin/game.js",
     "allowJs": true,
     "strict": true,
-    "noLib": false
+    "noLib": false,
+    "paths": {
+      "colyseus.js": [
+        "node_modules/colyseus.js/dist/colyseus.d.ts"
+      ]
+    },
+    "baseUrl": "."
   },
   "include": [
     "src/**/*.ts"
   ],
-  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json"
+  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
+  "compileOnSave": false
 }
